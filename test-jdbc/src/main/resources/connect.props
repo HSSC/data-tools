@@ -1,0 +1,3 @@
+url=jdbc:oracle:thin:@hsscdbdev2.muh.musc.edu:1521:db1
+user=empi
+password=empi01pw
