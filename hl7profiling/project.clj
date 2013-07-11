@@ -9,7 +9,7 @@
                  [clojure-csv "2.0.0-alpha2"]
                  [org.clojure/tools.cli "0.2.2"]
                  [org.clojure/tools.logging "0.2.6"]
-                 [org.clojure/core.cache "0.6.3-SNAPSHOT"]
+                 [org.clojure/core.cache "0.6.3"]
                  [org.codehaus.jsr166-mirror/jsr166y "1.7.0"]]
   :repositories [["sonatype" {:snapshots true
                               :url "https://oss.sonatype.org/content/groups/public/"}]]
