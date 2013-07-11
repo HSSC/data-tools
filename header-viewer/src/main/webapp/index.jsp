@@ -9,7 +9,7 @@
 <body>
 <h3>Headers</h3>
 <% 
-	java.util.Enumeration headerNames = request.getHeaderNames();
+	java.util.Enumeration<String> headerNames = request.getHeaderNames();
 	StringBuilder oph = new StringBuilder();
 	while(headerNames.hasMoreElements()){
 		String name = (String)headerNames.nextElement();
@@ -21,7 +21,7 @@
 
 <h3>Parameters</h3>
 <% 
-	java.util.Enumeration parmNames = request.getParameterNames();
+	java.util.Enumeration<String> parmNames = request.getParameterNames();
 	StringBuilder opp = new StringBuilder();
 	while(parmNames.hasMoreElements()){
 		String name = (String)parmNames.nextElement();
