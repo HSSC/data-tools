@@ -1,0 +1,6 @@
+test=value
+source.file=/temp/work/i2b2/srhs-users.csv
+#db.classname=@hssc-cdwr3-i2b2db-s.clemson.edu:1521:i2bstg
+db.classname=@localhost:1521:i2bprd
+db.user=i2b2pm
+db.password=demouser
