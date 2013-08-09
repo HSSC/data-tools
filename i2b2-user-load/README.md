@@ -9,8 +9,8 @@ email-like ID (in our case, a shibboleth ID).
 To use the project, you will need to:
 
 * Create a source file with all your users in it.
-** The file is tab delimited.
-** The file contains 3 columns: UserID, First Name, Last Name
+    * The file is tab delimited.
+    * The file contains 3 columns: UserID, First Name, Last Name
 * Configure the src/resources/i2b2-user-load.props to point to the source file you are loading and the database you are loading to.
 * Run the load process using the ``lein run`` command.
 
