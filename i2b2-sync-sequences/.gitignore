@@ -1,0 +1,28 @@
+# Project ignores
+/local
+
+# Maven Ignores
+/target
+pom.xml
+pom.xml.asc
+
+# Binary Ignores
+*.jar
+*.class
+
+# Lein Ignores
+/checkouts
+/.lein-*
+/.nrepl-port
+.lein-deps-sum
+.lein-failures
+.lein-plugins
+
+# Eclipse Ignores
+/bin
+/classes
+/lib
+.project
+.classpath
+.settings
+

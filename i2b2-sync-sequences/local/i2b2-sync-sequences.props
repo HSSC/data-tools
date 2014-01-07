@@ -1,0 +1,18 @@
+# The Host used to connect to the target Oracle I2B2 database.
+database.host=
+
+# The Port used to connect to the target Oracle I2B2 database.
+database.port=1521
+
+# The Instance used to connect to the target Oracle I2B2 database.
+database.instance=
+
+# The UserName used to connect to the target Oracle I2B2 database.
+database.username=
+
+# The Password used to connect to the target Oracle I2B2 database.
+database.password=
+
+# Conditions to override the default 'WHERE SEQUENCE_OWNER LIKE 'I2B2%' filter.  
+# Must start with 'WHERE'
+sequence.where=
