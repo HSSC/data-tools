@@ -12,7 +12,7 @@ To use the project, you will need to:
     * The file is tab delimited.
     * The file contains 3 columns: UserID, First Name, Last Name
 * Configure the src/resources/i2b2-user-load.props to point to the source file you are loading and the database you are loading to.
-* Run the load process using the ``lein run`` command.
+* Run the load process using the ``lein with-profile local run`` command.
 
 The process with inform you of progress through logging every 25th user saved.  Feel free to change as you wish.
 

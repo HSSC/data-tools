@@ -5,14 +5,13 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :main org.healthsciencessc.data-tools.i2b2.user-load.core
-
-  :source-paths ["src/clj"]
-  :resource-paths ["src/resources"]
-  :test-paths ["test/clj"]
+  :aot [org.healthsciencessc.data-tools.i2b2.user-load.core]
 
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [pliant/configure "0.1.2-SNAPSHOT"]
                  [pliant/process "0.1.1-SNAPSHOT"]
                  [org.clojure/java.jdbc "0.2.3"]
                  [org.clojure/tools.logging "0.2.3"]
-                 [ojdbc "6"]])
+                 [ojdbc "6"]]
+  
+  :profiles {:local {:resource-paths ["local"]}})
