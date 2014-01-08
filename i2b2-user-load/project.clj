@@ -7,11 +7,10 @@
   :main org.healthsciencessc.data-tools.i2b2.user-load.core
   :aot [org.healthsciencessc.data-tools.i2b2.user-load.core]
 
+  :resource-paths ["local"]
+  
   :dependencies [[org.clojure/clojure "1.4.0"]
-                 [pliant/configure "0.1.2-SNAPSHOT"]
-                 [pliant/process "0.1.1-SNAPSHOT"]
+                 [pliant/configure "0.1.2"]
                  [org.clojure/java.jdbc "0.2.3"]
                  [org.clojure/tools.logging "0.2.3"]
-                 [ojdbc "6"]]
-  
-  :profiles {:local {:resource-paths ["local"]}})
+                 [ojdbc "6"]])

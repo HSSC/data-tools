@@ -22,7 +22,7 @@
 (def base-project-roles {:HSSC roles})
 
 ;; A set of valid domains that user ids can be from. ie - @musc.edu
-(def domains #{"@clemson.edu" "@ghs.org" "@musc.edu" "@palmettohealth.org" "@sc.edu" "@srhs.com"})
+(def domains #{"@clemson.edu" "@ghs.org" "@musc.edu" "@palmettohealth.org" "@sc.edu" "@email.sc.edu" "@srhs.com"})
 
 ;; A mapping of domains to mappings of project/roles that are given to users whose ID falls within that domain.
 (def domain-roles {"@ghs.org" {:GHS roles}
@@ -51,6 +51,13 @@
   [r]
   "9117d59a69dc49807671a51f10ab7f")
 
+(defn get-authority
+  [r]
+  (let [uid (get-userid r)]
+    (reduce
+     (fn [s [k v]]
+       (concat s (map #(hash-map :user-id uid :project-id k :role % :status (get-status r)) v)))
+     '() (get-project-roles r))))
 
 (defn get-user
   [r]
@@ -60,14 +67,9 @@
        :full-name (get-name r)
        :password (get-password r)
        :email (get-email r)
-       :status (get-status r)})))
+       :status (get-status r)
+       :roles (get-authority r)})))
 
 
-(defn get-authority
-  [r]
-  (let [uid (get-userid r)]
-    (reduce
-     (fn [s [k v]]
-       (concat s (map #(hash-map :user-id uid :project-id k :role % :status (get-status r)) v)))
-     '() (get-project-roles r))))
+
 

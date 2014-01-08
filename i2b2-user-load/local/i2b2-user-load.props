@@ -1,6 +1,17 @@
-test=value
-source.file=/temp/work/i2b2/srhs-users.csv
-#db.classname=@hssc-cdwr3-i2b2db-s.clemson.edu:1521:i2bstg
-db.classname=@localhost:1521:i2bprd
-db.user=i2b2pm
-db.password=demouser
+# The tab-delimitted file contains the shibboleth ID, first name, and last name.
+source.file=/temp/users.txt
+
+# The Host used to connect to the target Oracle I2B2 database.
+database.host=
+
+# The Port used to connect to the target Oracle I2B2 database.
+database.port=1521
+
+# The Instance used to connect to the target Oracle I2B2 database.
+database.instance=
+
+# The Username used to connect to the database.
+database.username=
+
+# The password used to connect to the database.
+database.password=
